@@ -42,3 +42,22 @@ function points(games) {
        }  sum += array[i]
       } return sum - (max + min)
 }
+
+
+//Count of positives / sum of negatives
+
+function countPositivesSumNegatives(input) {
+
+  let sumArray = [0,0]
+  
+  if (!input || input.length === 0) {
+        return [];
+  }
+  for(i = 0; i < input.length ; i ++) {
+      if(input[i] > 0) {
+        sumArray[0]++
+      } else if(input[i] <= 0) {
+        sumArray[1] += input[i]
+      } 
+  } return sumArray
+}
