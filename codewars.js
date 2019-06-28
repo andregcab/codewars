@@ -61,3 +61,43 @@ function countPositivesSumNegatives(input) {
       } 
   } return sumArray
 }
+
+//Directions Reduction
+
+
+
+
+//     if(direction === "NORTH" && org[i+1] === "SOUTH"){
+//       firstArr.splice(i,1)
+//       firstArr.splice((i+1), 1)
+//     }
+
+//   });
+  
+
+
+
+//   if(direction === "NORTH" && newArr[i-1] === "SOUTH"){
+//        newArr.splice("NORTH", 1)
+//        newArr.splice("SOUTH")
+//      }
+  
+
+  
+ 
+//  if((newArr.indexOf("NORTH") - newArr.indexOf("SOUTH")) < 1){
+//  newArr.splice("NORTH", 1)
+//  newArr.splice("SOUTH", 1)
+// }
+
+
+
+
+//  ((newArr.indexOf("EAST") - newArr.indexOf("WEST")) > 1))){
+
+//  newArr.splice("EAST", 1)
+//  newArr.splice("WEST", 1)
+
+
+//    if(direction === 'EAST' || direction === 'WEST'){ewcounter ++}
+//    if(ewcounter > 2){return}
