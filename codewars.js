@@ -64,6 +64,38 @@ function countPositivesSumNegatives(input) {
 
 //Directions Reduction
 
+function dirReduc(arr){
+  let newArr = arr
+    for(i=0; i<newArr.length; i++){
+    
+      console.log("top",arr)
+      
+       if(newArr[i] === "NORTH" && newArr[i+1] === "SOUTH"){
+        newArr.splice(i,2)
+        console.log('second',newArr)
+        i-=2
+      }
+      if(newArr[i] === "SOUTH" && newArr[i+1] === "NORTH"){
+        newArr.splice(i,2)
+        console.log('third',newArr)
+        i-=2
+      }
+      if(newArr[i] === "EAST" && newArr[i+1] === "WEST"){
+        newArr.splice(i,2)
+        console.log("fourth",newArr)
+        i-=2
+      }
+      if(newArr[i] === "WEST" && newArr[i+1] === "EAST"){
+        newArr.splice(i,2)
+        console.log('fifth',newArr)
+        i-=2
+        
+      }
+    } 
+      
+    return newArr
+  };
+
 
 //this was the closest to working
 
