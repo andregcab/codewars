@@ -65,6 +65,36 @@ function countPositivesSumNegatives(input) {
 //Directions Reduction
 
 
+//this was the closest to working
+
+//   let firstArr = arr
+//   arr.forEach((direction, i, org)=>{
+//   if(direction === "EAST" || direction === "WEST"){
+//     if((org[i+1] === "EAST" || org[i+1] === "WEST") && (org[i+2] === "EAST" || org[i+2] === "WEST")){
+//       console.log(firstArr)
+//       firstArr.splice(0,3)
+//       console.log(firstArr)
+//       console.log("current dir is still", direction)
+//       firstArr.splice(firstArr.indexOf(direction),1)
+//     } else if(org[i+1] === "EAST" || org[i+1] === "WEST"){
+//         firstArr.splice(i,2)  
+//     }
+    
+//   } else {
+//       if((org[i+1] === "NORTH" || org[i+1] === "SOUTH") && (org[i+2] === "NORTH" || org[i+2] === "SOUTH")){
+//         console.log(firstArr)
+//         firstArr.splice(0,3)
+//         console.log(firstArr)
+//         console.log("current dir is still", direction)
+//         firstArr.splice(firstArr.indexOf(direction),1)
+//         console.log("last console",firstArr)
+//       } else if(org[i+1] === "NORTH" || org[i+1] === "SOUTH"){
+//           firstArr.splice(i,2)   
+//     }
+//   }
+
+
+
 
 
 //     if(direction === "NORTH" && org[i+1] === "SOUTH"){
