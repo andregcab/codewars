@@ -163,3 +163,20 @@ function dirReduc(arr){
 
 //    if(direction === 'EAST' || direction === 'WEST'){ewcounter ++}
 //    if(ewcounter > 2){return}
+
+
+
+//Clocky Mc Clock-Face
+
+var whatTimeIsIt = function(angle) {
+  if(angle === 0 || angle === 360){
+    return "12:00"
+  } else {
+      let dMin = angle * 2
+      let hours = Math.floor(dMin/60)
+      let minutes = Math.floor(dMin % 60)
+      if(hours === 0){hours = "12"}else if(hours < 10){hours = (`0${hours}`)}
+      if(minutes === 0){minutes += "0"}else if (minutes < 10){minutes = (`0${minutes}`)}
+      return (`${hours}:${minutes}`)
+    }
+}
