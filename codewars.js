@@ -180,3 +180,25 @@ var whatTimeIsIt = function(angle) {
       return (`${hours}:${minutes}`)
     }
 }
+
+
+//Is there a vowel in there?
+
+
+function isVow(a){
+  let newStr = a
+  for(i=0; i<a.length; i++){
+    if(a[i] === 97){
+      a.splice(i,1,"a")
+    } else if(a[i] === 101){
+      a.splice(i,1,"e")
+    } else if(a[i] === 105){
+      a.splice(i,1,"i")
+    } else if(a[i] === 111){
+      a.splice(i,1,"o")
+    } else if(a[i] === 117){
+      a.splice(i,1,"u")
+    }
+  }
+  return newStr
+}; 
