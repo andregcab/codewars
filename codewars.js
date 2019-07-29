@@ -202,3 +202,24 @@ function isVow(a){
   }
   return newStr
 }; 
+
+
+//Find the missing letter
+
+function findMissingLetter(array){
+  
+  let start = array[0]
+  let charCodeS = start.charCodeAt(0)
+  let end = array[array.length-1]
+  let charCodeE = end.charCodeAt(0)
+  let newArray = []
+
+  for(charCodeS; charCodeS <= charCodeE; charCodeS++){  
+    let letterToPush = String.fromCharCode(charCodeS)
+    newArray.push(letterToPush)
+  }
+
+  let missingLetter = newArray.filter((letter) =>!array.includes(letter))
+
+  return missingLetter[0]
+}
