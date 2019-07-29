@@ -223,3 +223,34 @@ function findMissingLetter(array){
 
   return missingLetter[0]
 }
+
+//Street Fighter 2 - Character Selection
+
+
+function streetFighterSelection(fighters, position, moves){
+  
+  let x = position[0]
+  let y = position[1]
+  let fighterArray = []
+
+  for(let i = 0; i < moves.length; i++){
+    if(moves[i] === 'up'){x = 0};
+    if(moves[i] === 'down'){x = 1};
+    if(moves[i] === 'right'){
+    if(y === 5){
+      y = 0
+    } else {
+      y += 1
+    }
+    }
+    if(moves[i] === 'left'){
+      if(y === 0){
+        y += 5
+    } else {
+      y -= 1
+    }
+    }
+    fighterArray.push(fighters[x][y])
+  }
+ return fighterArray
+}
