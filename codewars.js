@@ -277,3 +277,15 @@ for(let i = 0; i < str.length; i++){
 }
 return newWord
 }
+
+
+//Find the Parity Outlier
+
+function findOutlier(integers){
+  let isEven = 0
+  let isOdd = 0
+  for(i = 0; i < 3; i++){
+    integers[i] % 2 === 0 ? isEven ++ : isOdd ++
+  }
+  return isEven > isOdd ? integers.filter(num => num % 2 !== 0)[0] : integers.filter(num => num % 2 === 0)[0]
+}
