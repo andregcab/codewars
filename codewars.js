@@ -268,3 +268,12 @@ function expressionMatter(a, b, c) {
 
 
 
+// Spacify 
+
+function spacify(str) {
+  let newWord = ''
+for(let i = 0; i < str.length; i++){
+  i !== str.length -1 ? newWord += (str.charAt(i) + ' ') : newWord += (str.charAt(i))
+}
+return newWord
+}
