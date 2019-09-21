@@ -289,3 +289,15 @@ function findOutlier(integers){
   }
   return isEven > isOdd ? integers.filter(num => num % 2 !== 0)[0] : integers.filter(num => num % 2 === 0)[0]
 }
+
+//sum of odd numbers 
+
+function rowSumOddNumbers(n) {
+	let totalNumbers = ((n*(n+1)/2) * 2) - 1 
+  let counter = 0
+  for(let i = 1; i <= n ; i++){
+    counter += totalNumbers
+    totalNumbers -= 2
+  }
+  return counter
+}
