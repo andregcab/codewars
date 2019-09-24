@@ -302,3 +302,9 @@ function rowSumOddNumbers(n) {
   return counter
 }
 
+//L1 Set alarm
+
+function setAlarm(employed, vacation){
+  return employed === true && vacation === false ? true : false
+  
+  }
