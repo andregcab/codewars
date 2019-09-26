@@ -308,3 +308,8 @@ function setAlarm(employed, vacation){
   return employed === true && vacation === false ? true : false
   
   }
+
+
+//Make Upper Case
+
+const makeUpperCase = (str) => str.toUpperCase();
