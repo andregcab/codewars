@@ -324,24 +324,27 @@ var summation = function (num) {
   return sum
  }
 
- 
 
+ // //Two Sum
 
+/*
+ * @param {number[]} nums
+ * @param {number} target
+ * @return {number[]}
+ */
 
- en:
-  views:
-    pagination:
-      first: "&laquo; First"
-      last: "Last &raquo;"
-      previous: "&lsaquo; Prev"
-      next: "Next &rsaquo;"
-      truncate: "&hellip;"
-  helpers:
-    page_entries_info:
-      one_page:
-        display_entries:
-          zero: "No %{entry_name} found"
-          one: "Displaying <b>1</b> %{entry_name}"
-          other: "Displaying <b>all %{count}</b> %{entry_name}"
-      more_pages:
-        display_entries: "Displaying %{entry_name} <b>%{first}&nbsp;-&nbsp;%{last}</b> of <b>%{total}</b
+var twoSum = function(nums, target) {
+  let indexes = []
+  
+  for(let i=0; i < nums.length; i++){
+      let currentThing = nums[i]
+      indexes.push(i)
+      for(let x=0; x < nums.length; x++){
+          if(currentThing + nums[x] === target && i !== x){
+              indexes.push(x)
+              return indexes
+          }
+      }
+      indexes.pop()
+  }
+};
