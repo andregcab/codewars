@@ -324,3 +324,6 @@ var summation = function (num) {
   return sum
  }
 
+//Remove String Spaces 
+
+const noSpace = x => x.replace(/\s/g, '')
