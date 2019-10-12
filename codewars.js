@@ -327,3 +327,8 @@ var summation = function (num) {
 //Remove String Spaces 
 
 const noSpace = x => x.replace(/\s/g, '')
+
+
+// V A P O R W A V E 
+
+const vaporcode = string => string.replace(/\s/g, '').split('').join('  ').toUpperCase()
