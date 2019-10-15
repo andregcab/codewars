@@ -332,3 +332,7 @@ const noSpace = x => x.replace(/\s/g, '')
 // V A P O R W A V E 
 
 const vaporcode = string => string.replace(/\s/g, '').split('').join('  ').toUpperCase()
+
+//My head is at the wrong end!
+
+const fixTheMeerkat = arr => arr.reverse()
