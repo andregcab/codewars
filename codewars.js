@@ -336,3 +336,9 @@ const vaporcode = string => string.replace(/\s/g, '').split('').join('  ').toUpp
 //My head is at the wrong end!
 
 const fixTheMeerkat = arr => arr.reverse()
+
+//or
+
+function fixTheMeerkat(arr) {
+  return arr.reverse()
+}
