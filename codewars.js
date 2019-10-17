@@ -342,3 +342,10 @@ const fixTheMeerkat = arr => arr.reverse()
 function fixTheMeerkat(arr) {
   return arr.reverse()
 }
+
+//Remove First and Last Character 
+
+
+function removeChar(str){
+  return str.slice(1,(str.length -1))
+};
