@@ -349,3 +349,11 @@ function fixTheMeerkat(arr) {
 function removeChar(str){
   return str.slice(1,(str.length -1))
 };
+
+//A Strange Trip To The Market
+
+function isLockNessMonster(s) {
+  return s.includes('tree fiddy') ? true : 
+  s.includes('$3.50') ? true :
+  s.includes('three fifty') ? true : false
+ }
