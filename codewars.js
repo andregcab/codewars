@@ -357,3 +357,6 @@ function isLockNessMonster(s) {
   s.includes('$3.50') ? true :
   s.includes('three fifty') ? true : false
  }
+
+ //another solution 
+ //const isLockNessMonster = (s) => /tree fiddy|three fifty|3.50/.test(s);
