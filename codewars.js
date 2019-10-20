@@ -360,3 +360,10 @@ function isLockNessMonster(s) {
 
  //another solution 
  //const isLockNessMonster = (s) => /tree fiddy|three fifty|3.50/.test(s);
+
+
+ //Keep Hydrated!
+
+ function litres(time) {
+  return Math.floor(time*0.5)
+}
