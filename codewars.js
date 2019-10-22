@@ -367,3 +367,18 @@ function isLockNessMonster(s) {
  function litres(time) {
   return Math.floor(time*0.5)
 }
+
+//Mexican Wave 
+
+function wave(word){
+  let wordWave = []
+  for(let i = 0; i < word.length; i++){
+    let tmpWrd = word.split('');
+    if (/^[A-Z]$/i.test(tmpWrd[i])) {
+      let capLet = tmpWrd[i].toUpperCase();
+      let tempLetter = tmpWrd.splice(i, 1, capLet ); 
+      wordWave.push(tmpWrd.join(''));
+    }
+  }
+  return wordWave;
+}
