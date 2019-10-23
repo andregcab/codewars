@@ -376,9 +376,19 @@ function wave(word){
     let tmpWrd = word.split('');
     if (/^[A-Z]$/i.test(tmpWrd[i])) {
       let capLet = tmpWrd[i].toUpperCase();
-      let tempLetter = tmpWrd.splice(i, 1, capLet ); 
+      tmpWrd.splice(i, 1, capLet ); 
       wordWave.push(tmpWrd.join(''));
     }
   }
   return wordWave;
+}
+
+//Swap Values
+
+function swapValues() {
+  var args = Array.prototype.slice.call(arguments);
+  var temp = args[0][0];
+  var tempTwo = args[0][1];
+  args[0][0] = tempTwo;
+  args[0][1] = temp;
 }
