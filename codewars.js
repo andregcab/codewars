@@ -439,3 +439,14 @@ var ownedCatAndDog = function(cat, dog) {
 function greet(name, owner) {
   return name === owner ? "Hello boss" : "Hello guest";
 }
+
+//Sum of differences in an array
+
+function sumOfDifferences(arr) {
+  let theSum = 0;
+  arr.sort((a, b) => a - b);
+  for (let i = 0; i < arr.length - 1; i++) {
+    theSum += arr[i] - arr[i + 1];
+  }
+  return Math.abs(theSum);
+}
