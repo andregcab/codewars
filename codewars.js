@@ -433,3 +433,9 @@ var ownedCatAndDog = function(cat, dog) {
     dog < 15 ? 0 : dog < 24 ? 1 : ((dog - 14) / 5) | 0
   ];
 };
+
+//Grasshopper - Personalized Message
+
+function greet(name, owner) {
+  return name === owner ? "Hello boss" : "Hello guest";
+}
