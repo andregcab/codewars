@@ -450,3 +450,13 @@ function sumOfDifferences(arr) {
   }
   return Math.abs(theSum);
 }
+
+//Testing 1-2-3
+
+var number = function(array) {
+  let newArr = [];
+  array.forEach((array, i) => {
+    newArr.push(`${i + 1}: ${array}`);
+  });
+  return newArr;
+};
