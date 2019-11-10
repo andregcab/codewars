@@ -484,3 +484,9 @@ function howMuchILoveYou(nbPetals) {
       return "not at all";
   }
 }
+
+//You don't need switch
+const howMuchILoveYou = n =>
+  ["not at all", "I love you", "a little", "a lot", "passionately", "madly"][
+    n % 6
+  ];
