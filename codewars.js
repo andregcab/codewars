@@ -506,3 +506,13 @@ function bmi(weight, height) {
     return "Obese";
   }
 }
+
+//minMinMax
+
+function minMinMax(array) {
+  let minAb = Math.min(...array) + 1;
+  while (array.includes(minAb)) {
+    minAb++;
+  }
+  return [Math.min(...array), minAb, Math.max(...array)];
+}
