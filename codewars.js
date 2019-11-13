@@ -516,3 +516,19 @@ function minMinMax(array) {
   }
   return [Math.min(...array), minAb, Math.max(...array)];
 }
+
+//Split Strings
+function solution(str) {
+  let splitStr = str.split("");
+  let solutionArr = [];
+  for (let i = 0; i < splitStr.length; i++) {
+    if (splitStr.length !== 1) {
+      solutionArr.push(`${splitStr[0]}${splitStr[1]}`);
+      splitStr.splice(0, 2);
+      i--;
+    } else {
+      solutionArr.push(`${splitStr[0]}_`);
+    }
+  }
+  return solutionArr;
+}
