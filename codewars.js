@@ -532,3 +532,20 @@ function solution(str) {
   }
   return solutionArr;
 }
+
+//Who has the most money?
+
+function mostMoney(students) {
+  let allMoney = [];
+  for (let i = 0; i < students.length; i++) {
+    let studentMoney = 0;
+    studentMoney +=
+      students[i].fives * 5 + students[i].tens * 10 + students[i].twenties * 20;
+    allMoney.push(studentMoney);
+  }
+  if (Math.max(...allMoney) === Math.min(...allMoney) && students.length > 1) {
+    return "all";
+  } else {
+    return students[allMoney.indexOf(Math.max(...allMoney))].name;
+  }
+}
