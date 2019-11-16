@@ -549,3 +549,8 @@ function mostMoney(students) {
     return students[allMoney.indexOf(Math.max(...allMoney))].name;
   }
 }
+
+//Remove Anchor from URL
+
+const removeUrlAnchor = url =>
+  url.indexOf("#") == -1 ? url : url.substring(0, url.indexOf("#"));
