@@ -564,3 +564,16 @@ function getSum(a, b) {
   }
   return max;
 }
+
+//Descending order
+
+const descendingOrder = n =>
+  Number(
+    n
+      .toString()
+      .split("")
+      .sort(function(a, b) {
+        return b - a;
+      })
+      .join("")
+  );
