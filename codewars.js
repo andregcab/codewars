@@ -554,3 +554,13 @@ function mostMoney(students) {
 
 const removeUrlAnchor = url =>
   url.indexOf("#") == -1 ? url : url.substring(0, url.indexOf("#"));
+
+//sum of numbers
+
+function getSum(a, b) {
+  let max = Math.max(a, b);
+  for (let i = max; i > Math.min(a, b); i--) {
+    max += i - 1;
+  }
+  return max;
+}
