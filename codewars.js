@@ -577,3 +577,9 @@ const descendingOrder = n =>
       })
       .join("")
   );
+
+//Suitcase Packing
+
+function fit_in(a, b, m, n) {
+  return Math.pow(a * b, 2) < m * n ? true : false;
+}
