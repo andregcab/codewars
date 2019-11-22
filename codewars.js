@@ -583,3 +583,18 @@ const descendingOrder = n =>
 function fit_in(a, b, m, n) {
   return Math.pow(a * b, 2) < m * n ? true : false;
 }
+
+//Growing Plant
+
+function growingPlant(upSpeed, downSpeed, desiredHeight) {
+  let checkHeight = 0;
+  let numberOfDays = 0;
+  while (checkHeight < desiredHeight) {
+    checkHeight += upSpeed;
+    if (checkHeight < desiredHeight) {
+      checkHeight -= downSpeed;
+    }
+    numberOfDays++;
+  }
+  return numberOfDays;
+}
