@@ -598,3 +598,7 @@ function growingPlant(upSpeed, downSpeed, desiredHeight) {
   }
   return numberOfDays;
 }
+
+//Do I Get A Bonus?
+
+const bonusTime = (salary, bonus) => (bonus ? `£${salary * 10}` : `£${salary}`);
