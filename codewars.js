@@ -602,3 +602,11 @@ function growingPlant(upSpeed, downSpeed, desiredHeight) {
 //Do I Get A Bonus?
 
 const bonusTime = (salary, bonus) => (bonus ? `£${salary * 10}` : `£${salary}`);
+
+//Kepp Up The Hoop
+
+function hoopCount(n) {
+  return n >= 10
+    ? "Great, now move on to tricks"
+    : "Keep at it until you get it";
+}
