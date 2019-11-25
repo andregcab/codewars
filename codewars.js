@@ -610,3 +610,22 @@ function hoopCount(n) {
     ? "Great, now move on to tricks"
     : "Keep at it until you get it";
 }
+
+//Generate Range of Integers
+
+function generateRange(min, max, step) {
+  let array = [min];
+  let counter = min;
+  for (let i = min; i < max; i++) {
+    counter += step;
+    array.push(counter);
+    i = counter;
+  }
+  if (array[array.length - 1] > max) {
+    array.pop();
+  }
+  if (array[array.length - 1] + step <= max) {
+    array.push(max);
+  }
+  return array;
+}
