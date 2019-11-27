@@ -637,3 +637,9 @@ function apple(x) {
     ? "It's hotter than the sun!!"
     : "Help yourself to a honeycomb Yorkie for the glovebox.";
 }
+
+//Five without numbers!!
+
+function unusualFive(word = "hello") {
+  return word.length;
+}
