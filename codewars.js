@@ -643,3 +643,13 @@ function apple(x) {
 function unusualFive(word = "hello") {
   return word.length;
 }
+
+//Sort and Star
+
+function twoSort(s) {
+  let word = s.sort()[0].split("");
+  for (let i = 0; i < word.length - 1; i++) {
+    word[i] += "***";
+  }
+  return word.join("");
+}
