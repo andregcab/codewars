@@ -653,3 +653,15 @@ function twoSort(s) {
   }
   return word.join("");
 }
+
+//Draw Stairs
+
+function drawStairs(n) {
+  let stairs = "";
+  for (let i = 1; i < n; i++) {
+    stairs += "I\n";
+    stairs += " ".repeat(i);
+  }
+  stairs += "I";
+  return stairs;
+}
