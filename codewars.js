@@ -665,3 +665,10 @@ function drawStairs(n) {
   stairs += "I";
   return stairs;
 }
+
+//For UFC Fans (Total Beginners): Conor McGregor vs George Saint Pierre
+
+const quote = fighter =>
+  fighter.toLowerCase().includes("george")
+    ? "I am not impressed by your performance."
+    : "I'd like to take this chance to apologize.. To absolutely NOBODY!";
