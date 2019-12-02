@@ -672,3 +672,11 @@ const quote = fighter =>
   fighter.toLowerCase().includes("george")
     ? "I am not impressed by your performance."
     : "I'd like to take this chance to apologize.. To absolutely NOBODY!";
+
+//Reversed Strings
+
+const solution = str =>
+  str
+    .split("")
+    .reverse()
+    .join("");
