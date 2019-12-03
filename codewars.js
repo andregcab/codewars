@@ -680,3 +680,9 @@ const solution = str =>
     .split("")
     .reverse()
     .join("");
+
+// get character from ASCII Value
+
+function getChar(c) {
+  return String.fromCharCode(c);
+}
