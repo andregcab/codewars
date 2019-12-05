@@ -686,3 +686,22 @@ const solution = str =>
 function getChar(c) {
   return String.fromCharCode(c);
 }
+
+//Love vs Friendship
+
+function wordsToMarks(string) {
+  let total = 0;
+  for (let i = 0; i < string.length; i++) {
+    total += string.charCodeAt(i) - 96;
+  }
+  return total;
+}
+
+//using REDUCE
+
+function wordsToMarks(string) {
+  return [...string].reduce(
+    (acc, letter) => (acc += letter.charCodeAt() - 96),
+    0
+  );
+}
