@@ -717,3 +717,16 @@ function breakChocolate(n, m) {
 function maps(x) {
   return x.map(x => x * 2);
 }
+
+//Well of ideas
+
+function well(x) {
+  let goods = x.filter(n => n === "good");
+  if (goods.length > 2) {
+    return "I smell a series!";
+  } else if (goods.length !== 0) {
+    return "Publish!";
+  } else {
+    return "Fail!";
+  }
+}
