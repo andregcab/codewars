@@ -711,3 +711,9 @@ function wordsToMarks(string) {
 function breakChocolate(n, m) {
   return n * m == 0 ? 0 : n * m - 1;
 }
+
+//Lost without a map
+
+function maps(x) {
+  return x.map(x => x * 2);
+}
