@@ -705,3 +705,9 @@ function wordsToMarks(string) {
     0
   );
 }
+
+//Breaking Chocolate Problem
+
+function breakChocolate(n, m) {
+  return n * m == 0 ? 0 : n * m - 1;
+}
