@@ -730,3 +730,9 @@ function well(x) {
     return "Fail!";
   }
 }
+
+//Sum Mixed Array
+
+function sumMix(x) {
+  return x.reduce((a, b) => Number(a) + Number(b));
+}
