@@ -736,3 +736,8 @@ function well(x) {
 function sumMix(x) {
   return x.reduce((a, b) => Number(a) + Number(b));
 }
+
+function sumMix(x) {
+  if (x.length === 1) return Number(x);
+  else return x.reduce((a, b) => Number(a) + Number(b));
+}
