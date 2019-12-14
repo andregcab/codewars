@@ -741,3 +741,13 @@ function sumMix(x) {
   if (x.length === 1) return Number(x);
   else return x.reduce((a, b) => Number(a) + Number(b));
 }
+
+// Count the Monkeys
+
+function monkeyCount(n) {
+  let arr = [];
+  for (let i = 1; i <= n; i++) {
+    arr.push(i);
+  }
+  return arr;
+}
