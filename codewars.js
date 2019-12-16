@@ -751,3 +751,13 @@ function monkeyCount(n) {
   }
   return arr;
 }
+
+//Summing a numbers digits
+
+function sumDigits(number) {
+  return Math.abs(number)
+    .toString()
+    .split("")
+    .map(Number)
+    .reduce((a, b) => a + b);
+}
