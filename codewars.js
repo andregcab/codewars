@@ -762,6 +762,12 @@ function sumDigits(number) {
     .reduce((a, b) => a + b);
 }
 
+//The Wide Mouthed Frog
+
+function mouthSize(animal) {
+  return animal.toLowerCase() == "alligator" ? "small" : "wide";
+}
+
 //Borrower Speak
 
 function borrow(s) {
