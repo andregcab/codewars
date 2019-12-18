@@ -761,3 +761,9 @@ function sumDigits(number) {
     .map(Number)
     .reduce((a, b) => a + b);
 }
+
+//Borrower Speak
+
+function borrow(s) {
+  return s.replace(/\W/g, "").toLowerCase();
+}
