@@ -816,3 +816,13 @@ function squareDigits(num) {
   }
   return Number(numsSquared.join(""));
 }
+
+//Returning Duplicates
+
+function duplicateCount(text) {
+  let textArr = text.toLowerCase().split("");
+  let findDuplicates = textArr.filter(
+    (item, index) => textArr.indexOf(item) != index
+  );
+  return [...new Set(findDuplicates)].length;
+}
