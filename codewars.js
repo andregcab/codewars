@@ -805,3 +805,14 @@ function maxMultiple(divisor, bound) {
     }
   }
 }
+
+//Square every digit ------ Should have used .map!!1
+
+function squareDigits(num) {
+  let numArray = String(num).split("");
+  let numsSquared = [];
+  for (let i = 0; i < numArray.length; i++) {
+    numsSquared.push(Math.pow(numArray[i], 2));
+  }
+  return Number(numsSquared.join(""));
+}
