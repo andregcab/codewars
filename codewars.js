@@ -788,10 +788,20 @@ function between(a, b) {
 
 function _if(bool, func1, func2) {
   return bool ? func1() : func2();
+}
 
+//Sum The Strings
 
-//Sum The Strings 
+function sumStr(a, b) {
+  return String(Number(a) + Number(b));
+}
 
-function sumStr(a,b) {
-  return String(Number(a) + Number(b))
+//Maximum Multiple
+
+function maxMultiple(divisor, bound) {
+  for (let i = bound; i > 0; i--) {
+    if (i % divisor == 0) {
+      return i;
+    }
+  }
 }
