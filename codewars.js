@@ -773,3 +773,13 @@ function mouthSize(animal) {
 function borrow(s) {
   return s.replace(/\W/g, "").toLowerCase();
 }
+
+//What is between
+
+function between(a, b) {
+  let newArr = [];
+  for (let i = a; i <= b; i++) {
+    newArr.push(i);
+  }
+  return newArr;
+}
