@@ -826,3 +826,28 @@ function duplicateCount(text) {
   );
   return [...new Set(findDuplicates)].length;
 }
+
+//The Lamp: Revisited
+
+class Lamp {
+  constructor(color) {
+    this.color = color;
+    this.on = false;
+  }
+
+  toggleSwitch() {
+    if (this.on == false) {
+      this.on = true;
+    } else {
+      this.on = false;
+    }
+  }
+
+  state() {
+    if (this.on == false) {
+      return "The lamp is off.";
+    } else {
+      return "The lamp is on.";
+    }
+  }
+}
