@@ -851,3 +851,12 @@ class Lamp {
     }
   }
 }
+
+//Shortest Word
+
+function findShort(s) {
+  let biggest = s.split(" ").reduce((prev, cur) => {
+    return cur.length < prev.length ? cur : prev;
+  });
+  return biggest.length;
+}
