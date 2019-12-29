@@ -860,3 +860,28 @@ function findShort(s) {
   });
   return biggest.length;
 }
+
+//Lottery Machine
+
+function lottery(str) {
+  return (
+    [...new Set(str.split("").filter(x => !isNaN(x)))].join("") ||
+    "One more run!"
+  );
+}
+
+//All Star Code Challenge #3
+
+var removeVowels = function(str) {
+  let newStr = str
+    .toLowerCase()
+    .split("")
+    .filter(x => {
+      if (x == "a" || x == "e" || x == "i" || x == "o" || x == "u") {
+        return false;
+      } else {
+        return true;
+      }
+    });
+  return newStr.join("");
+};
