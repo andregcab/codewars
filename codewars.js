@@ -885,3 +885,18 @@ var removeVowels = function(str) {
     });
   return newStr.join("");
 };
+
+//OR
+
+function removeVowels(str) {
+  return str.replace(/[aeiou]/gi, ""); //hehe
+}
+
+//Bit Counting
+
+var countBits = function(n) {
+  return n
+    .toString(2)
+    .split("")
+    .filter(x => x === "1").length;
+};
