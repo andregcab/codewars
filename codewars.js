@@ -939,3 +939,16 @@ function calculateTip(amount, rating) {
       return "Rating not recognised";
   }
 }
+
+//get the middle character
+
+function getMiddle(s) {
+  return s.length % 2 == 0
+    ? String(
+        s
+          .split("")
+          .splice([s.length / 2 - 1], 2)
+          .join("")
+      )
+    : String(s.split("")[Math.floor(s.length / 2)]);
+}
