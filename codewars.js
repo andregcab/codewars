@@ -900,3 +900,17 @@ var countBits = function(n) {
     .split("")
     .filter(x => x === "1").length;
 };
+
+//House Numbers Sum
+
+function houseNumbersSum(inputArray) {
+  let counter = 0;
+  for (let i = 0; i < inputArray.length; i++) {
+    if (inputArray[i] == 0) {
+      return counter;
+    } else {
+      counter += inputArray[i];
+    }
+  }
+  return counter;
+}
