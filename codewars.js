@@ -952,3 +952,17 @@ function getMiddle(s) {
       )
     : String(s.split("")[Math.floor(s.length / 2)]);
 }
+
+//Be concise
+
+const n = "You're a(n) ";
+
+const describeAge = a => {
+  return a <= 12
+    ? n + "kid"
+    : a <= 17
+    ? n + "teenager"
+    : a <= 64
+    ? n + "adult"
+    : n + "elderly";
+};
