@@ -1016,3 +1016,19 @@ function horMirror(strng) {
 function oper(fct, s) {
   return fct(s);
 }
+
+//Multiples of 3 or 5
+
+function solution(number) {
+  let numOfMult = 0;
+  for (let i = 0; i < number; i++) {
+    if ((i % 3 === 0) & (i % 5 === 0)) {
+      numOfMult += i;
+    } else if (i % 3 === 0) {
+      numOfMult += i;
+    } else if (i % 5 === 0) {
+      numOfMult += i;
+    }
+  }
+  return numOfMult;
+}
