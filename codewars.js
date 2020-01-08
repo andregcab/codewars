@@ -966,3 +966,11 @@ const describeAge = a => {
     ? n + "adult"
     : n + "elderly";
 };
+
+//Is Integer Array
+
+function isIntArray(arr) {
+  return arr
+    ? arr.filter(x => Number(x) === x && x % 1 === 0).length === arr.length
+    : false;
+}
