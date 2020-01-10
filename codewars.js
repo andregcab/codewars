@@ -1032,3 +1032,27 @@ function solution(number) {
   }
   return numOfMult;
 }
+
+//A rule of divisibility by 7
+
+function seven(m) {
+  if (m == 0) {
+    return [0, 0];
+  }
+  let steps = 0;
+  let numPop = 0;
+  let final = [];
+  let numTable = m;
+  while (final.length !== 2) {
+    numTable = String(numTable).split("");
+    numPop = Number(numTable.pop()) * 2;
+    numTable = Number(numTable.join(""));
+    steps++;
+    numTable -= numPop;
+    if (numTable < 100) {
+      final.push(numTable);
+      final.push(steps);
+    }
+  }
+  return final;
+}
