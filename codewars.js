@@ -974,3 +974,17 @@ function isIntArray(arr) {
     ? arr.filter(x => Number(x) === x && x % 1 === 0).length === arr.length
     : false;
 }
+
+//Minumize Sum of array
+
+function minSum(arr) {
+  let total = 0;
+  for (let i = 0; i < arr.length; i++) {
+    total +=
+      arr[arr.indexOf(Math.max(...arr))] * arr[arr.indexOf(Math.min(...arr))];
+    arr.splice(arr.indexOf(Math.max(...arr)), 1);
+    arr.splice(arr.indexOf(Math.min(...arr)), 1);
+    i -= 1;
+  }
+  return total;
+}
