@@ -988,3 +988,31 @@ function minSum(arr) {
   }
   return total;
 }
+
+//Move in squared strings
+
+function vertMirror(strng) {
+  let sub = strng.split("\n");
+  let vert = "";
+  for (let i = 0; i < sub.length; i++) {
+    vert +=
+      sub[i]
+        .split("")
+        .reverse()
+        .join("") + "\n";
+  }
+  return vert.substring(0, vert.length - 1);
+}
+function horMirror(strng) {
+  let sub = strng.split("\n");
+  let vert = [];
+  for (let i = 0; i < sub.length; i++) {
+    vert.unshift(sub[i] + "\n");
+  }
+  vert = vert.join("");
+  return vert.substring(0, vert.length - 1);
+}
+
+function oper(fct, s) {
+  return fct(s);
+}
