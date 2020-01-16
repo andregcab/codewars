@@ -1068,3 +1068,23 @@ function getDivisorsCnt(n) {
   }
   return count;
 }
+
+//London CityHacker
+
+function londonCityHacker(journey) {
+  let busFare = 0;
+  let tubeFare = 0;
+  for (let i = 0; i < journey.length; i++) {
+    if (typeof journey[i] === "string") {
+      tubeFare += 2.4;
+    } else if (typeof journey[i] === "number") {
+      if (typeof journey[i + 1] === "number") {
+        busFare += 1.5;
+        i++;
+      } else {
+        busFare += 1.5;
+      }
+    }
+  }
+  return `£${(busFare + tubeFare).toFixed(2)}`;
+}
