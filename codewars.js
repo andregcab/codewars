@@ -1087,3 +1087,20 @@ function londonCityHacker(journey) {
   }
   return `£${(busFare + tubeFare).toFixed(2)}`;
 }
+
+//Expressions Matter Again!
+// My code improved :)
+
+function expressionMatter(a, b, c) {
+  let w = (a + b) * c;
+  let x = a * (b + c);
+  let y = a + b + c;
+  let z = a * b * c;
+  return Math.max(w, x, y, z);
+}
+
+//Will you make it
+
+const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+  return mpg * fuelLeft >= distanceToPump ? true : false;
+};
