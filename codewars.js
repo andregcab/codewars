@@ -1104,3 +1104,8 @@ function expressionMatter(a, b, c) {
 const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
   return mpg * fuelLeft >= distanceToPump ? true : false;
 };
+
+//Find Numbers which are divisible by a given number
+
+const divisibleBy = (numbers, divisor) =>
+  numbers.filter(n => n % divisor === 0);
