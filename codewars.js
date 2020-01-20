@@ -1109,3 +1109,12 @@ const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
 
 const divisibleBy = (numbers, divisor) =>
   numbers.filter(n => n % divisor === 0);
+
+//Odd or Even?
+function oddOrEven(array) {
+  return array.length === 0
+    ? "even"
+    : array.reduce((a, b) => a + b) % 2 === 0
+    ? "even"
+    : "odd";
+}
