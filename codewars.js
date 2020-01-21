@@ -1118,3 +1118,31 @@ function oddOrEven(array) {
     ? "even"
     : "odd";
 }
+
+//PANDEMIA
+
+function infected(s) {
+  let arr = s.split("");
+  let total = 0;
+  let infected = 0;
+  let temp = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] == "X") {
+      if (temp.includes("1")) {
+        total += temp.length;
+        infected += temp.length;
+        temp = [];
+      } else {
+        total += temp.length;
+        temp = [];
+      }
+    } else {
+      temp.push(arr[i]);
+    }
+  }
+  if (temp.includes("1")) {
+    total += temp.length;
+    infected += temp.length;
+  } else total += temp.length;
+  return 100 * (infected / total) || 0;
+}
