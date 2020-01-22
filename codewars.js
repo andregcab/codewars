@@ -1146,3 +1146,15 @@ function infected(s) {
   } else total += temp.length;
   return 100 * (infected / total) || 0;
 }
+
+//Most Sales
+
+function top3(products, amounts, prices) {
+  let revenues = amounts.map((amount, i) => amount * prices[i]);
+  let bestProducts = [];
+  for (let i = 0; i < 3; i++) {
+    bestProducts.push(products[revenues.indexOf(Math.max(...revenues))]);
+    revenues[revenues.indexOf(Math.max(...revenues))] = -Infinity;
+  }
+  return bestProducts;
+}
