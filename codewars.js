@@ -1158,3 +1158,16 @@ function top3(products, amounts, prices) {
   }
   return bestProducts;
 }
+
+//Calculate Parity Bit
+
+function checkParity(parity, bin) {
+  let arr = bin.split("").sort((a, b) => a - b);
+  let ones = arr.splice(arr.indexOf("1"), arr.length).length % 2 === 0;
+
+  if (parity == "even") {
+    return ones ? 0 : 1;
+  } else if (parity == "odd") {
+    return ones ? 1 : 0;
+  }
+}
