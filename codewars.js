@@ -1177,3 +1177,10 @@ function checkParity(parity, bin) {
 function multiples(m, n) {
   return Array.from(Array(m), (_v, i) => (i + 1) * n);
 }
+
+//Trianguar Numbers
+
+function isTriangular(t) {
+  let n = Math.round(Math.sqrt(t * 2));
+  return t === (n * (n + 1)) / 2;
+}
