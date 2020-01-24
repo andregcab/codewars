@@ -1171,3 +1171,9 @@ function checkParity(parity, bin) {
     return ones ? 1 : 0;
   }
 }
+
+//Return the first M multiples of N
+
+function multiples(m, n) {
+  return Array.from(Array(m), (_v, i) => (i + 1) * n);
+}
