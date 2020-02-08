@@ -1184,3 +1184,9 @@ function isTriangular(t) {
   let n = Math.round(Math.sqrt(t * 2));
   return t === (n * (n + 1)) / 2;
 }
+
+//Sum of angles
+
+function angle(n) {
+  return (n - 2) * 180;
+}
